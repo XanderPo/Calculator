@@ -11,7 +11,7 @@ del.addEventListener('click', deleteLastElem)
 
 function addToString(e) {
     let clickedButtonValue = e.target.textContent
-    currentString += clickedButtonValue 
+    currentString += clickedButtonValue
     // changeOppositeValue()   
     checkStringLastSymbol()   
     topStringDisplayed.textContent = currentString    

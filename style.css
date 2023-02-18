@@ -29,7 +29,7 @@
     /* margin: 55px 18px 0 auto; */
     top: 45px;
     right: 18px;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
@@ -42,7 +42,7 @@
     position: absolute;
     top: 85px;
     right: 18px;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 60px;
@@ -74,7 +74,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Inter';
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 25px;

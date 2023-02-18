@@ -14,6 +14,7 @@ function addToString(e) {
     currentString += clickedButtonValue
     // changeOppositeValue()   
     checkStringLastSymbol()   
+    
     topStringDisplayed.textContent = currentString    
 }
 

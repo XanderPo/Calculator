@@ -20,14 +20,14 @@ function findOperatorInString() {
 
 function checkStringLastSymbol() {
     let currentStringLastSymbol = currentString[currentString.length-1]
-    let preLastCount = currentString[currentString.length-2]
+    let penaltSymbol = currentString[currentString.length-2]
     let withOutLast = currentString.slice(0, currentString.length-1)
 
     if (currentStringLastSymbol === '*' || currentStringLastSymbol === '/' ||  currentStringLastSymbol === '-' || currentStringLastSymbol === '+' || currentStringLastSymbol === '.'){
-        if (currentStringLastSymbol === preLastCount) {
+        if (currentStringLastSymbol === penaltSymbol) {
             currentString = currentString.slice(0, length-1)
         }
-        else if (preLastCount === '*' || preLastCount === '/' ||  preLastCount === '-' || preLastCount === '+' || preLastCount === '.'){
+        else if (penaltSymbol === '*' || penaltSymbol === '/' ||  penaltSymbol === '-' || penaltSymbol === '+' || penaltSymbol === '.'){
             currentString = currentString.slice(0, length-1)
         }
         else if (withOutLast.indexOf('*') !== -1 || withOutLast.indexOf('/') !== -1 || withOutLast.indexOf('+') !== -1 || withOutLast.indexOf('-') !== -1){            
@@ -35,15 +35,20 @@ function checkStringLastSymbol() {
             currentString = currentString.slice(0, length-1)
             countResult()
             currentString = `${countResult()}${lastElem}`
-            console.log('последний элемент в строке', topStringDisplayed.textContent);
+            console.log('последний элемент в строке', currentString);
         }
     }
-    else if(currentStringLastSymbol === '+/-'){
-        
-    }
-    else if(currentStringLastSymbol === 'C'){
+    // else if(currentStringLastSymbol === '+/-'){
+
+    // }
+    else if(currentStringLastSymbol === 'C'){        
         currentString = ''
         resultString.textContent = '0'
+    }
+    else if(currentStringLastSymbol === '%'){
+        currentString = currentString.slice(0, length-1)
+        currentString = currentString/100
+        resultString.textContent = currentString
     }
     else if (currentStringLastSymbol === '='){
         currentString = currentString.slice(0, length-1)

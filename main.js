@@ -137,6 +137,9 @@ function delLastElement() {
   } else if (firstNumber !== "" && operator === "" && secondNumber === "") {
     firstNumber = firstNumber.slice(0, firstNumber.length - 1);
     display.textContent = `${firstNumber}${operator}${secondNumber}`;
+    if (firstNumber === ''){
+      display.textContent = '0'
+    }
     console.log(firstNumber);
   } else {
     console.log("Error");

@@ -26,7 +26,6 @@
 
 .count-string {
     position: absolute;
-    /* margin: 55px 18px 0 auto; */
     top: 45px;
     right: 18px;
     font-family: 'Inter', sans-serif;
@@ -38,7 +37,6 @@
 }
 
 .result-string {
-    /* margin: 0 18px 0 0; */
     position: absolute;
     top: 85px;
     right: 18px;
@@ -70,7 +68,6 @@
 }
 
 .button {
-    /* height: 55px; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -87,11 +84,6 @@
 .button:hover {
     background-color: #aaaaad;
 }
-
-/* .button:active {
-    width: 99%;
-    height: 99%;
-} */
 
 .zero {
     grid-column: 1 / 3;
